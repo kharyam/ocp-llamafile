@@ -11,4 +11,6 @@ oc new-build --name llamatest --binary --strategy docker
 oc start-build llamatest --from-dir . --follow --wait
 oc new-app llamatest
 oc expose svc/llamatest
+
+oc get routes
 ```
